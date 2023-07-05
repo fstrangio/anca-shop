@@ -7,6 +7,7 @@ import Error404 from "./componentes/Error404/Error404";
 
 const App = () => {
   return (
+    
     <>
       <BrowserRouter>
         <NavBar />
