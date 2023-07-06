@@ -1,0 +1,17 @@
+.contenedorProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .itemContainer {
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .itemImage {
+    width: 100%; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+  }
+  
