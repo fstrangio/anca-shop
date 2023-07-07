@@ -10,6 +10,17 @@ h2 {
     font-family: Cactus Town;
     font-size: 2rem;
     -webkit-text-stroke: 1px black;
-  }
+}
   
-  
+h3 {
+    color: white;
+    font-family: Cactus Town;
+    font-size: 1.5rem;
+    -webkit-text-stroke: 1px black;
+}
+
+h4 {
+    color: black;
+    font-family: Cactus Town;
+    font-size: 1.2rem;
+}

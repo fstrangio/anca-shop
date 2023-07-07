@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       <h2>Encontrá todo para tu amigo de 4 patas</h2>
-      <p>Tenemos una gran variedad de alimento, ropa, juguetes y mucho más!!!</p>
+      <h3>Tenemos una gran variedad de alimento, ropa, juguetes y mucho más!!!</h3>
     </div>
   )
 }

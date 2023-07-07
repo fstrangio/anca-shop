@@ -1,45 +1,45 @@
 const misProductos = [
     {
-      id: "Royal Canin",
+      id: 1,
       nombre: "Royal Canin",
       precio: 15500,
       img: "./img/royalcanin.png",
-      leyenda: "Alimento balanceado Royal Canin"
+      detalle: "Alimento balanceado Royal Canin"
     },
     {
-      id: "Eukanuba",
+      id: 2,
       nombre: "Eukanuba",
       precio: 16000,
       img: "./img/eukanuba.png",
-      leyenda: "Alimento balanceado Eukanuba"
+      detalle: "Alimento balanceado Eukanuba"
     },
     {
-      id: "Pedigree",
+      id: 3,
       nombre: "Pedigree",
       precio: 12000,
       img: "./img/pedigree.png",
-      leyenda: "Alimento balanceado Pedigree"
+      detalle: "Alimento balanceado Pedigree"
     },
     {
-      id: "Criadores",
+      id: 4,
       nombre: "Criadores",
       precio: 10000,
       img: "./img/criadores.png",
-      leyenda: "Alimento balanceado Criadores"
+      detalle: "Alimento balanceado Criadores"
     },    
     {
-      id: "Old Prince",
+      id: 5,
       nombre: "Old Prince",
       precio: 13500,
       img: "./img/oldprince.png",
-      leyenda: "Alimento balanceado Old Prince"
+      detalle: "Alimento balanceado Old Prince"
     },
     {
-      id: "Vital Can",
+      id: 6,
       nombre: "Vital Can",
       precio: 14800,
       img: "./img/vitalcan.png",
-      leyenda: "Alimento balanceado Vital Can"
+      detalle: "Alimento balanceado Vital Can"
     }
 
   ];
