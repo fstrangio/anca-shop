@@ -1,25 +1,47 @@
 const misProductos = [
     {
-      id: "royal-canin",
+      id: "Royal Canin",
       nombre: "Royal Canin",
       precio: 15500,
       img: "./img/royalcanin.png",
       leyenda: "Alimento balanceado Royal Canin"
     },
     {
-      id: "eukanuba",
+      id: "Eukanuba",
       nombre: "Eukanuba",
       precio: 16000,
       img: "./img/eukanuba.png",
       leyenda: "Alimento balanceado Eukanuba"
     },
     {
-      id: "pedigree",
+      id: "Pedigree",
       nombre: "Pedigree",
       precio: 12000,
       img: "./img/pedigree.png",
       leyenda: "Alimento balanceado Pedigree"
+    },
+    {
+      id: "Criadores",
+      nombre: "Criadores",
+      precio: 10000,
+      img: "./img/criadores.png",
+      leyenda: "Alimento balanceado Criadores"
+    },    
+    {
+      id: "Old Prince",
+      nombre: "Old Prince",
+      precio: 13500,
+      img: "./img/oldprince.png",
+      leyenda: "Alimento balanceado Old Prince"
+    },
+    {
+      id: "Vital Can",
+      nombre: "Vital Can",
+      precio: 14800,
+      img: "./img/vitalcan.png",
+      leyenda: "Alimento balanceado Vital Can"
     }
+
   ];
   
   export const getProductos = () => {
