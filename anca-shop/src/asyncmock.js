@@ -37,7 +37,7 @@ const misProductos = [
     id: 5,
     precio: 13500,
     categoria: "alimento",
-    detalle: "Alimento balanceado Old Prince"
+    detalle: "Alimento para perros Old Prince"
   },
   {
     nombre: "Vital Can",
@@ -45,8 +45,40 @@ const misProductos = [
     id: 6,
     precio: 14800,
     categoria: "alimento",
-    detalle: "Alimento balanceado Vital Can"
-  }
+    detalle: "Alimento para perros Vital Can"
+  },
+  {
+    nombre: "Buzo California rosa",
+    img: "./img/california.png",
+    id: 7,
+    precio: 5800,
+    categoria: "ropa",
+    detalle: "Buzo color rosa con capucha"
+  },
+  {
+    nombre: "Buzo con estampa de caniches",
+    img: "./img/estampacaniches.png",
+    id: 8,
+    precio: 4200,
+    categoria: "ropa",
+    detalle: "Buzo color verde sin mangas estampado"
+  },
+  {
+    nombre: "Buzo rojo con capucha",
+    img: "./img/rojo.png",
+    id: 9,
+    precio: 7000,
+    categoria: "ropa",
+    detalle: "Buzo rojo con mangas"
+  },
+  {
+    nombre: "Buzo negro tejido",
+    img: "./img/tejido.png",
+    id: 10,
+    precio: 6200,
+    categoria: "ropa",
+    detalle: "Buzo negro tejido"
+  },
 
 ];
 
@@ -67,11 +99,13 @@ export const getUnProducto = (id) => {
   });
 };
 
-export const getProductosPorCategoria = () => {
+export const getProductosPorCategoria = (categoria) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      const producto = misProductos.find((prod) => categoria === categoria);
-      resolve(producto);
-    });
+      const productosFiltrados = misProductos.filter(
+        (prod) => prod.categoria === categoria
+      );
+      resolve(productosFiltrados);
+    }, 2000);
   });
 };
