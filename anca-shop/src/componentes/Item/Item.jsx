@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Item.css';
 import { Link } from 'react-router-dom';
 
-const Item = ({ id, nombre, precio, img, detalle }) => {
+const Item = ({ nombre, img, id, precio, categoria, detalle }) => {
   const formattedPrecio = precio.toLocaleString('es-AR', { style: 'currency', currency: 'ARS' });
   const [mostrarDetalle, setMostrarDetalle] = useState(false);
 
@@ -15,8 +15,9 @@ const Item = ({ id, nombre, precio, img, detalle }) => {
       <img className="itemImage" src={img} alt={nombre} />
       <div className="itemDetails">
         <h4>Nombre: {nombre}</h4>
-        <p>Precio: {formattedPrecio}</p>
         <p>ID: {id}</p>
+        <p>Precio: {formattedPrecio}</p>
+        <p>Categoría: {categoria}</p>
         <Link to={`/alimento/${id}`}>
           <button className="verDetallesButton" onClick={toggleDetalle}>
             {mostrarDetalle ? 'Ocultar detalles' : 'Ver detalles'}
