@@ -12,23 +12,21 @@ const Item = ({ nombre, img, id, precio, categoria, detalle }) => {
 
   return (
     <div className="itemContainer">
-      <img className="itemImage" src={img} alt={nombre} />
+      <img className="itemImage" src={img} alt={nombre} loading="lazy" />
       <div className="itemDetails">
         <h4>Nombre: {nombre}</h4>
         <p>ID: {id}</p>
         <p>Precio: {formattedPrecio}</p>
         <p>Categoría: {categoria}</p>
-        <Link to={`/alimento/${id}`}>
-          <button className="verDetallesButton" onClick={toggleDetalle}>
-            {mostrarDetalle ? 'Ocultar detalles' : 'Ver detalles'}
-          </button>
-        </Link>
+        <button className="verDetallesButton" onClick={toggleDetalle}>
+          {mostrarDetalle ? 'Ocultar detalles' : 'Ver detalles'}
+        </button>
+        {mostrarDetalle && (
+          <div className="detalleContainer">
+            <p className="detalleTexto">Detalle: {detalle}</p>
+          </div>
+        )}
       </div>
-      {mostrarDetalle && (
-        <div className="detalleContainer">
-          <p className="detalleTexto">Detalle: {detalle}</p>
-        </div>
-      )}
     </div>
   );
 };
