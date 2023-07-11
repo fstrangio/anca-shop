@@ -16,6 +16,11 @@ const NavBar = () => {
             </NavLink>
           </li>
           <li>
+            <NavLink className="navLink" to={"/categoria/juguete"}>
+              Juguete
+            </NavLink>
+          </li>
+          <li>
             <NavLink className="navLink" to={"/categoria/ropa"}>
               Ropa
             </NavLink>

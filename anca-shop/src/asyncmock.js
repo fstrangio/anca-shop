@@ -79,7 +79,22 @@ const misProductos = [
     categoria: "ropa",
     detalle: "Buzo negro tejido"
   },
-
+  {
+    nombre: "Juguete Kong",
+    img: "./img/kong.png",
+    id: 11,
+    precio: 9700,
+    categoria: "juguete",
+    detalle: "Juguete para ejercitar los dientes"
+  },
+  {
+    nombre: "Juguete Nylabone",
+    img: "./img/nylabone.png",
+    id: 12,
+    precio: 8900,
+    categoria: "juguete",
+    detalle: "Juguete didáctico para buscar comida"
+  },
 ];
 
 export const getProductos = () => {
@@ -109,3 +124,4 @@ export const getProductosPorCategoria = (categoria) => {
     }, 2000);
   });
 };
+
